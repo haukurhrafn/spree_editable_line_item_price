@@ -1,3 +1,5 @@
 Spree::LineItem.class_eval do
-	attr_accessible :price
+	def price(price)
+		self.price = price
+  end
 end
